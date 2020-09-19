@@ -1,0 +1,113 @@
+
+.home {
+  &-header{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  &-topnav {
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #aeaeae;
+    padding-left: pxToRem(30);
+
+    & a {
+      color: #000;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      display: block;
+    }
+    & a.icon {
+      display: block;
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+    &_search {
+      float: right;
+      margin-right: 16px;
+      font-size: 19px;
+      border: 0;
+    }
+    & input[type=text] {
+      float: right;
+      margin-right: 16px;
+      font-size: 17px;
+      border: 0;
+      border-bottom: 1px solid orange;
+    }
+  }
+  &-menu {
+    position: absolute;
+    left: 5%;
+    top: 0;
+  }
+
+  &-card {
+    height: 200px;
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+    &-body{
+      padding: pxToRem(20) 0 pxToRem(5) 0;
+    }
+  }
+
+  &-image__left-corner {
+    position: absolute;
+    bottom: pxToRem(70);
+    width: 70%;
+    background: $white;
+    height: pxToRem(35);
+  }
+
+  &-card__subtext{
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: #a8a8a8;
+    font-family: monospace;
+    &_right {
+      text-align: right;
+      font-weight: 400;
+    }
+  }
+  &-cart {
+    font-size: 14px;
+    float: right;
+  }
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.page-position {
+  position: absolute;
+  left: 5%;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #000000;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}

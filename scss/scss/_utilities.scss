@@ -1,0 +1,188 @@
+.p-t-20 {
+    padding-top: 30px;
+}
+
+.star-size{
+    font-size: 10px;
+}
+
+.checked {
+    color: orange;
+  }
+
+
+  //margin and padding 
+  // file namme : utilities .scss
+
+  // this for some css Properties that we mostly used in our project.
+  $spacer: 5px;
+
+  @each $box in a, x, y, t, b, l, r {
+    @for $i from 0 through 8 {
+        .m-#{$box}-#{$i}{
+            @if $box == 'a'{
+                margin: ($spacer * $i);
+            }
+
+            @if $box == 'x'{
+                margin-left: ($spacer * $i);
+                margin-right: ($spacer * $i);
+            }
+
+            @if $box == 'y'{
+                margin-top: ($spacer * $i);
+                margin-bottom: ($spacer * $i);
+            }
+
+            @if $box == 't'{
+                margin-top: ($spacer * $i);
+            }
+
+            @if $box == 'b'{
+                margin-bottom: ($spacer * $i);
+            }
+
+            @if $box == 'l'{
+                margin-left: ($spacer * $i);
+            }
+
+            @if $box == 'r'{
+                margin-right: ($spacer * $i);
+            }
+        }
+
+
+        .m-#{$box}-n#{$i}{
+            @if $box == 'a'{
+                margin: -($spacer * $i);
+            }
+
+            @if $box == 'x'{
+                margin-left: -($spacer * $i);
+                margin-right: -($spacer * $i);
+            }
+
+            @if $box == 'y'{
+                margin-top: -($spacer * $i);
+                margin-bottom: -($spacer * $i);
+            }
+
+            @if $box == 't'{
+                margin-top: -($spacer * $i);
+            }
+
+            @if $box == 'b'{
+                margin-bottom: -($spacer * $i);
+            }
+
+            @if $box == 'l'{
+                margin-left: -($spacer * $i);
+            }
+
+            @if $box == 'r'{
+                margin-right: -($spacer * $i);
+            }
+        }
+
+        .p-#{$box}-#{$i}{
+            @if $box == 'a'{
+                padding: ($spacer * $i);
+            }
+
+            @if $box == 'x'{
+                padding-left: ($spacer * $i);
+                padding-right: ($spacer * $i);
+            }
+
+            @if $box == 'y'{
+                padding-top: ($spacer * $i);
+                padding-bottom: ($spacer * $i);
+            }
+
+            @if $box == 't'{
+                padding-top: ($spacer * $i);
+            }
+
+            @if $box == 'b'{
+                padding-bottom: ($spacer * $i);
+            }
+
+            @if $box == 'l'{
+                padding-left: ($spacer * $i);
+            }
+
+            @if $box == 'r'{
+                padding-right: ($spacer * $i);
+            }
+        }
+    }      
+  }
+
+  //border
+
+  .br{
+      &-l {
+          &-0 {
+              border-left: 0;
+          }
+      }
+      &-r {
+          &-0 {
+              border-right: 0;
+          }
+      }
+      &-b {
+        &-0 {
+            border-bottom: 0;
+        }
+    }
+    &-t {
+        &-0 {
+            border-top: 0;
+        }
+    }
+    &-r {
+        &-1 {
+            border-right: solid 1px #ccc;
+        }
+    }
+    &-l {
+        &-l {
+            border-left: solid 1px #ccc;
+        }
+    }
+    &-b {
+        &-1 {
+            border-bottom: solid 1px #ccc;
+        }
+    }
+    &-t {
+        &-l {
+            border-top: solid 1px #ccc;
+        }
+    }
+}
+
+.fs {
+    &-10 {
+        font-size: .625rem;
+    }
+    &-11 {
+        font-size: .6875rem;
+    }
+    &-12 {
+        font-size: .75rem;
+    }
+    &-14 {
+        font-size: .875rem;
+    }
+    &-16 {
+        font-size: 1.0rem;
+    }
+    &-18 {
+        font-size: pxToRem(18);
+    }
+    &-20 {
+        font-size: pxToRem(20);
+    }
+}

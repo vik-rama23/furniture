@@ -1,0 +1,32 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    font-size: unquote($baseUnit + 'px');
+    color: $font-color;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.fa.fa-tag{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+  }
+ .fa.custom-fa{
+  font-size:12em;
+  -webkit-text-stroke-color: blue;
+ color:transparent;
+ }
