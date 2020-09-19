@@ -37,9 +37,9 @@
       <div class="col-md-3">
         hello
       </div>
-      <div class="col-md-3" onclick="myFunction()">
+      <div class="col-md-3" onclick="myFunction('chair')">
         <div class="card" style="border: none">
-          <img class="home-card card-img-top" src="../images/product-1.jpeg" alt="Card image cap">
+          <img class="home-card card-img-top" src="../images/chair.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
           <div>
             <div class="fs-14">Vikram</div>
@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" onclick="myFunction('product-2')">
         <div class="card" style="border: none">
           <img class="home-card card-img-top" src="../images/product-2.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
@@ -77,7 +77,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" onclick="myFunction('product-3')">
         <div class="card" style="border: none">
           <img class="home-card card-img-top" src="../images/product-3.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
@@ -101,7 +101,7 @@
     <div class="row p-t-20">
       <div class="col-md-3">
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" onclick="myFunction('product-4')">
         <div class="card" style="border: none">
           <img class="home-card card-img-top" src="../images/product-4.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
@@ -121,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" onclick="myFunction('product-5')">
         <div class="card" style="border: none">
           <img class="home-card card-img-top" src="../images/product-5.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
@@ -141,7 +141,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" onclick="myFunction('product-6')">
         <div class="card" style="border: none">
           <img class="home-card card-img-top" src="../images/product-6.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
@@ -166,7 +166,7 @@
       <div class="col-md-3">
 
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" onclick="myFunction('product-7')">
         <div class="card" style="border: none">
           <img class="home-card card-img-top" src="../images/product-7.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
@@ -186,7 +186,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" onclick="myFunction('product-8')">
         <div class="card" style="border: none">
           <img class="home-card card-img-top" src="../images/product-8.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
@@ -206,7 +206,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3" onclick="myFunction('product-9')">
         <div class="card" style="border: none" style="border: none">
           <img class="home-card card-img-top" src="../images/product-9.jpeg" alt="Card image cap">
           <div class="home-image__left-corner"></div>
@@ -241,8 +241,8 @@
   </section>
 
   <script>
-    function myFunction(){  
-      window.location.href ='/home-details';
+    function myFunction(image){  
+      window.location.href ='/home-details?'+image;
     }
   </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

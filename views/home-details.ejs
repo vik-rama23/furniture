@@ -36,7 +36,8 @@
     <section class="container">
         <div class="row p-t-20">
             <div class="col-md-5">
-                <img class="home-details-image" src="../images/chair.png" alt="Card image cap">
+                <div  class="home-details-image" id = "details"></div>
+                <!-- <img id= "details" class="home-details-image"  alt="Card image cap"> -->
             </div>
             <div class="col-md-2">
                 <div class="home-details-arrowBox">
@@ -45,22 +46,32 @@
             </div>
             <div class="col-md-5">
                 <div class="m-t-8" style="width: 70%">
-                <label>Kappu regular chair</label>
-                <label><h3>Scandanavian Collection</h3></label>
-                <p>Vass Shoes makes handcrafted mens's shoes in the heart of Budapest. I made a concept product page for practice
-                    which in my opinion represents their qualities better that their current site  </p></div>
+                    <label>Kappu regular chair</label>
+                    <label>
+                        <h3>Scandanavian Collection</h3>
+                    </label>
+                    <p>Vass Shoes makes handcrafted mens's shoes in the heart of Budapest. I made a concept product
+                        page for practice
+                        which in my opinion represents their qualities better that their current site </p>
+                </div>
 
-                    <p>Color</p>
-                
+                <p>Color</p>
+
             </div>
         </div>
     </section>
 
-    <!-- <script>
-    function myFunction(){  
-      
-    }
-  </script> -->
+    <script>
+        var a = window.location.search;
+        var image = a.replace(/\?/g, '');
+
+        var img = document.createElement('img'); 
+        img.src =  '../images/'+image+'.jpeg'; 
+       // document.getElementById("img").className = "home-details-image";
+        document.getElementById('details').appendChild(img);
+       img.className = "home-details-image";
+        // down.innerHTML = "Image Element Added."; 
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
